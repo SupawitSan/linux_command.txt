@@ -1,0 +1,18 @@
+supawit@supawit:~$ mkdir -p Final_Test/src
+supawit@supawit:~$ cd Final_Test/
+supawit@supawit:~/Final_Test$ catkin_create_pkg ROBOT_CLASS.txt rospy roscpp std_msgs
+Traceback (most recent call last):
+  File "/usr/bin/catkin_create_pkg", line 33, in <module>
+    sys.exit(load_entry_point('catkin-pkg==0.5.2', 'console_scripts', 'catkin_create_pkg')())
+  File "/usr/lib/python3/dist-packages/catkin_pkg/cli/create_pkg.py", line 53, in main
+    package_template = PackageTemplate._create_package_template(
+  File "/usr/lib/python3/dist-packages/catkin_pkg/package_templates.py", line 129, in _create_package_template
+    package_temp = PackageTemplate(
+  File "/usr/lib/python3/dist-packages/catkin_pkg/package_templates.py", line 55, in __init__
+    self.validate()
+  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+    raise InvalidPackage('\n'.join(errors), self.filename)
+catkin_pkg.package.InvalidPackage: Package name "ROBOT_CLASS.txt" does not follow naming conventions
+supawit@supawit:~/Final_Test$ cd ROBOT_CLASS.txt/
+bash: cd: ROBOT_CLASS.txt/: No such file or directory
+supawit@supawit:~/Final_Test$ 
